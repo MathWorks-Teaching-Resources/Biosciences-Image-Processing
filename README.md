@@ -2,7 +2,7 @@
 <a name="T_7D546F7B"></a>
 # <span style="color:rgb(213,80,0)">Biological Sciences: Image Processing</span>
 
-[![View Module on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/XXXX) or
+[![View Module on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/163701-biosciences-image-processing) or
 [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/biosciences-Image-Processing&file=S1_Introduction.mlx)
 
 In this module, we will learn how to **import**, **preprocess**, and **segment biologically relevant images** using MATLAB®. Make sure you're familiar with the basics of using MATLAB by going through the [MATLAB Onramp](https://matlabacademy.mathworks.com/details/matlab-onramp/gettingstarted) before continuing. You'll need to utilize the [Image Processing Toolbox](https://www.mathworks.com/help/images/) for this module. You may want to consider going through the [Image Processing Onramp](https://matlabacademy.mathworks.com/details/image-processing-onramp/imageprocessing) for further practice. 
