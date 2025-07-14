@@ -19,7 +19,7 @@ In this module, we will learn how to **import**, **preprocess**, and **segment b
  
 <a name="endToc"></a>
 <a name="H_17F52C6E"></a>
-<img src="images/FluorescentCells.jpg" width="35%" height="35%" alt="Stained cells in a cow blood vessel">
+<img src="images/FluorescentCells.jpg" width="35%" alt="Stained cells in a cow blood vessel">
 
 Cells taken from the inner walls of a cow blood vessel, stained fluorescent, and viewed under a [microscope](https://commons.wikimedia.org/wiki/File:FluorescentCells.jpg). 
 
@@ -67,3 +67,24 @@ A problem set for students to practice these concepts is also included here.
 <a name="H_2415E2FD"></a>
 ## [Problem set](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/biosciences-Image-Processing&file=S4_Problem_set.mlx)
 -  [Problem set answers](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/biosciences-Image-Processing&file=S5_Problem_set_answers.mlx)  
+
+## Related Courseware Modules
+
+- Biosciences: Working With Data [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Biosciences-Working-With-Data&file=S1_Introduction.mlx)
+- [Biosciences: Statistical Methods](https://www.mathworks.com/matlabcentral/fileexchange/163691-biosciences-statistical-methods)  [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Biosciences-Statistical-Methods&file=S1_Introduction.mlx)
+- [Biosciences: Machine Learning](https://www.mathworks.com/matlabcentral/fileexchange/163696-biosciences-machine-learning)  [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Biosciences-Machine-Learning&file=S1_Introduction.mlx)
+- [Biosciences: Genetics](https://www.mathworks.com/matlabcentral/fileexchange/163706-biosciences-genetics)  [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Biosciences-Genetics&file=S1_Introduction.mlx)
+
+## Products 
+
+MATLAB®, Image Processing Toolbox™
+
+## References
+[1] Centers for Disease Control and Prevention. (2019).Trypanosomiasis, African. Retrieved from [https://www.cdc.gov/dpdx/trypanosomiasisafrican/index.html](https://www.cdc.gov/dpdx/trypanosomiasisafrican/index.html)
+[2] Centers for Disease Control and Prevention. (2020). Malaria. Retrieved from [https://www.cdc.gov/dpdx/malaria/index.html](https://www.cdc.gov/dpdx/malaria/index.html)
+
+## License
+The License for this project is in the [LICENSE.md](LICENSE.md) file in this repository.
+
+##
+© Copyright 2023 The MathWorks, Inc.
