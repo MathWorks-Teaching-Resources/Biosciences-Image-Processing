@@ -1,90 +1,117 @@
+<a id="T_7D546F7B"></a>
 
-<a name="T_7D546F7B"></a>
 # <span style="color:rgb(213,80,0)">Biological Sciences: Image Processing</span>
 
-[![View Module on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/163701-biosciences-image-processing) or
-[![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/biosciences-Image-Processing&file=S1_Introduction.mlx)
 
-In this module, we will learn how to **import**, **preprocess**, and **segment biologically relevant images** using MATLAB®. Make sure you're familiar with the basics of using MATLAB by going through the [MATLAB Onramp](https://matlabacademy.mathworks.com/details/matlab-onramp/gettingstarted) before continuing. You'll need to utilize the [Image Processing Toolbox](https://www.mathworks.com/help/images/) for this module. You may want to consider going through the [Image Processing Onramp](https://matlabacademy.mathworks.com/details/image-processing-onramp/imageprocessing) for further practice. 
+[![View on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/163701-biosciences-image-processing) [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Biosciences-Image-Processing&project=BiosciencesImageProcessing.prj&file=README.mlx)
 
-<a name="beginToc"></a>
-## Table of Contents
-[Introduction](#H_6724101F)
+[![MATLAB Versions Tested](https://img.shields.io/endpoint?url=https://mathworks-teaching-resources.github.io/Biosciences-Image-Processing/TestedWith.json)](https://mathworks-teaching-resources.github.io/Biosciences-Image-Processing)
 
-&emsp;&emsp;[Notes on the use of live scripts](#H_DECB8235)
- 
-&emsp;&emsp;[Various icons will be used throughout these scripts to identify different types of interactivity.](#H_C793A640)
- 
-[Scripts ](#H_8128A35F)
- 
-<a name="endToc"></a>
-<a name="H_17F52C6E"></a>
-<img src="images/FluorescentCells.jpg" width="35%" alt="Stained cells in a cow blood vessel">
+**Curriculum Module**
 
-Cells taken from the inner walls of a cow blood vessel, stained fluorescent, and viewed under a [microscope](https://commons.wikimedia.org/wiki/File:FluorescentCells.jpg). 
+_Created with R2025a. Compatible with R2025a and later releases._
 
-<a name="H_6724101F"></a>
-# Introduction
+# Information
 
-As biologists, we study the living world and how the species that comprise it evolve, interact, and function. You can imagine many ways in which images might be useful in biology. Images of a species of animal or plant might be used to identify various features of those organisms. Image processing can be used to monitor the health of crops, to measure the movement of humans, and can be used with machine learning techniques to diagnose different conditions such as skin cancer. An iPhone will tell you what species of plant you're looking at if you take a photo of it. If you're walking in the woods, you can instantly know if you can eat a plant or should avoid touching it altogether! We'll start this module by exploring such a plant image. 
+In this module, we will learn how to **import**, **preprocess**, and **segment biologically relevant images** using MATLAB®. 
 
+<a id="H_F00D98E4"></a>
 
-Within organisms, we may want to look deeper than can be seen with the naked eye, which is enabled by the various types of microscopy currently used in the field. You can imagine using basic microscopy methods to look at the cells in a patient's blood, or even using more complicated microscopic imaging methods to look at the activity of cells in an alive mouse's brain! 
+## Background
 
+You can use these live scripts as demonstrations in lectures, class activities, or interactive assignments outside class. This module will teach students how to apply image processing methods to biologically relevant data. We will explore image data storage and image segmentation with plant images and then count the number of red blood cells. 
 
-As techniques in biology have gotten more and more complex, biologists have begun collecting more and more data. It can be challenging to analyze all of this data by hand, but luckily MATLAB can help! For example, imagine you collect a sample of a patient's blood, and you want to count the number of cells so you can figure out if the cell count is too low, too high, etc. People used to have to painstakingly count cells by hand, but now the process can be easily automated in MATLAB by importing and segmenting an image of the slide. We'll explore how to do this at the end of this module. 
+The instructions inside the live scripts will guide you through the exercises and activities. Get started with each live script by running it one section at a time. To stop running the script or a section midway (for example, when an animation is in progress), use the <img src="Images/EndIcon.png" width="19" alt="EndIcon.png"> Stop button in the **RUN** section of the **Live Editor** tab in the MATLAB Toolstrip.
 
-<a name="H_DECB8235"></a>
-## **Notes on the use of live scripts**
--  These scripts can all be run independently, though we recommend going through these live scripts in order.  
--  These live scripts are intended to be used with output inline. To change the output, go to the **View** tab of the toolstrip, and select <img src="images/outputinline.png" width="19" alt="image_1.png"> **Output Inline**.  
--  If you haven't spent much time with live scripts, and need a refresher on interacting with them before you begin, click [here](matlab: edit starting_tips.mlx).  
-<a name="H_C793A640"></a>
-### Various icons will be used throughout these scripts to identify different types of interactivity.
+# MATLAB Compatibility
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="images/try.png" width="19" alt="Try icon"> Students to interact with the code . 
+These plain\-text live scripts require MATLAB R2025a or newer. For MATLAB R2024b or older, download the [legacy MLX version](https://github.com/MathWorks-Teaching-Resources/Biosciences-Statistical-Methods/releases/tag/mlx).
 
+## Contact Us
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="images/exercise.png" width="22" alt="Exercise icon"> **Exercises** exist in most scripts and the answers will be provided at the end.  
+Contact the [MathWorks Educator Content Development Team](mailto:onlineteaching@mathworks.com) if you would like to request assistance, provide feedback, or if you have a question.
 
+# Prerequisites
 
-A problem set for students to practice these concepts is also included here. 
+Make sure you're familiar with the basics of using MATLAB by going through the [MATLAB Onramp](https://matlabacademy.mathworks.com/details/matlab-onramp/gettingstarted) before continuing. You'll need to utilize the [Image Processing Toolbox](https://www.mathworks.com/help/images/) for this module. You may want to consider going through the [Image Processing Onramp](https://matlabacademy.mathworks.com/details/image-processing-onramp/imageprocessing) for further practice.
 
+<a id="H_330E72C3"></a>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="images/reflect.png" width="22" alt="Reflect icon"> Students reflect on what they've learned or on what the data means. 
+## Getting Started
 
+### Accessing the Module
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="images/app.png" width="25" alt="Application icon"> Particularly interesting examples of how these concepts are used in "real-world" biology
+### **On MATLAB® Online**™:
 
-<a name="H_8128A35F"></a>
-# Scripts 
-<a name="H_FC8AD622"></a>
-## [Plant image segmentation](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/biosciences-Image-Processing&file=S2_Plant_img_segmentation.mlx)
--   ***Learning objective:*** Students will import,  manipulate, and segment a plant image in MATLAB, and learn how images are stored.  
-<a name="H_E956AA02"></a>
-## [Cell counting](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/biosciences-Image-Processing&file=S3_Cell_counting.mlx)
--   ***Learning objective:*** Students will learn to segment images by shape and count the number of cells on a microscope slide image of red blood cells. 
-<a name="H_2415E2FD"></a>
-## [Problem set](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/biosciences-Image-Processing&file=S4_Problem_set.mlx)
--  [Problem set answers](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/biosciences-Image-Processing&file=S5_Problem_set_answers.mlx)  
+Use the [<img src="Images/OpenInMO.png" width="136" alt="OpenInMO.png">](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Biosciences-Statistical-Methods&project=BiosciencesStatisticalMethods.prj) link to download the module. You will be prompted to log in or create a MathWorks account. The project will be loaded, and you will see an app with several navigation options to get you started.
 
-## Related Courseware Modules
+### **On Desktop:**
 
-- Biosciences: Working With Data [![View Biosciences: Working With Data on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/181586-biosciences-working-with-data) [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Biosciences-Working-With-Data&file=S1_Introduction.mlx)
-- Biosciences: Statistical Methods [![View Biosciences: Statistical Methods on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/163691-biosciences-statistical-methods)  [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Biosciences-Statistical-Methods&file=S1_Introduction.mlx)
-- Biosciences: Machine Learning [![View Biosciences: Machine Learning on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/163696-biosciences-machine-learning)  [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Biosciences-Machine-Learning&file=S1_Introduction.mlx)
-- Biosciences: Genetics [![View Biosciences: Genetics on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/163706-biosciences-genetics)  [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Biosciences-Genetics&file=S1_Introduction.mlx)
+Download or clone this repository. Open MATLAB, navigate to the folder containing these scripts and double\-click on [BiosciencesImageProcessing.prj](<matlab: openProject("BiosciencesImageProcessing.prj")>). It will add the appropriate files to your MATLAB path and open an app that asks you where you would like to start.
 
-## Products 
+Ensure you have all the required products ([listed below](#H_E850B4FF)) installed. If you need to include a product, add it using the Add\-On Explorer. To install an add\-on, go to the **Home** tab and select  <img src="Images/AddOnsIcon.png" width="16" alt="AddOnsIcon.png"> **Add-Ons** > **Get Add-Ons**. 
 
-MATLAB®, Image Processing Toolbox™
+<a id="H_E850B4FF"></a>
 
-## References
-[1] Centers for Disease Control and Prevention. (2019).Trypanosomiasis, African. Retrieved from [https://www.cdc.gov/dpdx/trypanosomiasisafrican/index.html](https://www.cdc.gov/dpdx/trypanosomiasisafrican/index.html)
-[2] Centers for Disease Control and Prevention. (2020). Malaria. Retrieved from [https://www.cdc.gov/dpdx/malaria/index.html](https://www.cdc.gov/dpdx/malaria/index.html)
+## Products
 
-## License
-The License for this project is in the [LICENSE.md](LICENSE.md) file in this repository.
+MATLAB® is used throughout. Tools from the Image Processing Toolbox™ are used frequently as well.
 
-##
-© Copyright 2023 The MathWorks, Inc.
+<a id="H_8128A35F"></a>
+
+# Scripts
+<a id="H_FC8AD622"></a>
+
+## [Plant image segmentation](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Biosciences-Image-Processing&project=BiosciencesImageProcessing.prj&file=Scripts/S1PlantImageSegmentation.m)
+||||
+| :-- | :-- | :-- |
+| <img src="Images/flowers.jpg" width="127" alt="flowers.jpg"> <br>  | **In this script, students will...** <br> $\bullet$ import,  manipulate, and segment a plant image in MATLAB, and learn how images are stored <br>  | **Academic disciplines** <br> $\bullet$ Biology <br>   |
+
+<a id="H_E956AA02"></a>
+
+## [Cell counting](Scripts/S2CellCounting.m)
+||||
+| :-- | :-- | :-- |
+| <img src="Images/FluorescentCells.jpg" width="171" alt="FluorescentCells.jpg"> <br>  | **In this script, students will...** <br> $\bullet$ segment images by shape and count the number of cells on a microscope slide image of red blood cells <br>  | **Academic disciplines** <br> $\bullet$ Biology <br>   |
+
+<a id="H_2415E2FD"></a>
+
+## [Problem set](Scripts/S3ProblemSet.m)
+||||
+| :-- | :-- | :-- |
+| <img src="Images/Cells.png" width="166" alt="Cells.png"> <br>  | **In this script, students will...** <br> $\bullet$ count the number of healthy cells in an image <br>  | **Academic disciplines** <br> $\bullet$ Biology <br>   |
+
+# Instructor Resources
+
+[Instructor guides](InstructorResources/InstructorResources.m) contain paired solutions and student\-distribution tools.
+
+# License
+
+The license for this module is available in the [LICENSE.md](https://github.com/MathWorks-Teaching-Resources/Biosciences-Working-With-Data/blob/release/LICENSE.md).
+
+# Related Courseware Modules
+
+| **Courseware** <br>  |  | **Location** <br>   |
+| :-- | :-- | :-- |
+| [Biosciences: Working With Data](https://www.mathworks.com/matlabcentral/fileexchange/181586-biosciences-working-with-data)  <br>  | <img src="Images/Penguins.jpeg" width="171" alt="Penguins.jpeg"> <br>  | **Available on:** <br> [<img src="Images/OpenInFX.png" width="91" alt="OpenInFX.png">](https://www.mathworks.com/matlabcentral/fileexchange/181586-biosciences-working-with-data)  <br> [<img src="Images/OpenInMO.png" width="136" alt="OpenInMO.png">](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Biosciences-Working-With-Data&project=BiosciencesWorkingWithData.prj&file=README.m) <br> [GitHub](https://github.com/MathWorks-Teaching-Resources/Biosciences-Working-With-Data)  <br>   |
+| [Biosciences: Statistical Methods](https://www.mathworks.com/matlabcentral/fileexchange/163691-biosciences-statistical-methods)  <br>  | <img src="Images/Gentoo.jpeg" width="171" alt="Gentoo.jpeg"> <br>  | **Available on:** <br> [<img src="Images/OpenInFX.png" width="91" alt="OpenInFX.png">](https://www.mathworks.com/matlabcentral/fileexchange/163691-biosciences-statistical-methods)  <br> [<img src="Images/OpenInMO.png" width="136" alt="OpenInMO.png">](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Biosciences-Statistical-Methods&project=BiosciencesStatisticalMethods.prj&file=README.m) <br> [GitHub](https://github.com/MathWorks-Teaching-Resources/Biosciences-Statistical-Methods)  <br>   |
+| [Biosciences: Machine Learning](https://www.mathworks.com/matlabcentral/fileexchange/163696-machine-learning-for-biosciences)  <br>  |  <img src="Images/Rose.jpeg" width="127" alt="Rose.jpeg"> <br>  | **Available on:** <br> [<img src="Images/OpenInFX.png" width="91" alt="OpenInFX.png">](https://www.mathworks.com/matlabcentral/fileexchange/163696-machine-learning-for-biosciences)  <br> [<img src="Images/OpenInMO.png" width="136" alt="OpenInMO.png">](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Biosciences-Machine-Learning&project=MachineLearningBiosciences.prj&file=README.mlx) <br> [GitHub](https://github.com/MathWorks-Teaching-Resources/Biosciences-Machine-Learning)  <br>   |
+| [Biosciences: Genetics](https://www.mathworks.com/matlabcentral/fileexchange/163706-biosciences-genetics)  <br>  |  <img src="Images/DNA_helix.png" width="124" alt="DNA_helix.png"> <br>  | **Available on:** <br> [<img src="Images/OpenInFX.png" width="91" alt="OpenInFX.png">](https://www.mathworks.com/matlabcentral/fileexchange/163706-biosciences-genetics)  <br> [<img src="Images/OpenInMO.png" width="136" alt="OpenInMO.png">](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/biosciences-genetics&project=BiosciencesGenetics.prj&file=README.m) <br> [GitHub](https://github.com/MathWorks-Teaching-Resources/Biosciences-Genetics)  <br>   |
+
+Or feel free to explore our other [modular courseware content](https://www.mathworks.com/matlabcentral/fileexchange/?q=tag%3A%22courseware+module%22&sort=downloads_desc_30d).
+
+# Educator Resources
+- [Educator Page](https://www.mathworks.com/academia/educators.html)
+- [Instructor Resources](InstructorResources/Documentation/README.md)
+
+<a id="H_0FA5DA18"></a>
+
+# Contribute 
+
+Looking for more? Find an issue? Have a suggestion? Please contact the [MathWorks Educator Content Development Team](mailto:onlineteaching@mathworks.com). If you want to contribute directly to this project, you can find information about how to do so in the [CONTRIBUTING.md](./CONTRIBUTING.md) page.
+
+# Help us Improve
+
+[Share your feedback](<matlab: ShareFeedback>) to help us improve this module.
+
+*© Copyright 2023\-2026 The MathWorks, Inc.*

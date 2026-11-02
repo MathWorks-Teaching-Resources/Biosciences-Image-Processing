@@ -10,8 +10,12 @@
 # MATLAB Drive
 *.MATLABDriveTag
 
-# Compiled MEX files
+# Compiled files
 *.mex*
+*.p
+
+# Compressed files
+*.zip
 
 # Packaged app and toolbox files
 *.mlappinstall
@@ -23,16 +27,35 @@
 # Generated helpsearch folders
 helpsearch*/
 
-# Code generation folders
+# Defined Simulink cache folder
+Utilities/SimulinkCache/*
+
+# Standard code generation folders
 slprj/
 sccprj/
 codegen/
-*ert_rtw/
 
 # Code generation file
 *.eep
 *.elf
 *.hex
+*.bin
 
 # Cache files
 *.slxc
+
+# Testing and CI related artifact
+public/
+.buildtool/
+ci_utilities/
+
+# AI Tooling
+.playwright-mcp/
+
+# Module-specific generated files and learner data
+.cache/
+*ert_rtw/
+Utilities/ProjectSettings.mat
+InternalFiles/ExternalLinkHealth.md
+Data/*
+!Data/.gitkeep

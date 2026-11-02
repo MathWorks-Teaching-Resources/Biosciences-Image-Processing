@@ -16,7 +16,7 @@
 *.slmx binary merge=mlAutoMerge
 *.sltx binary
 *.slxc binary
-*.slx binary merge=mlAutoMerge
+*.slx binary merge=mlAutoMerge linguist-language=Simulink
 *.slxp binary
 
 ## Other common binary file types
@@ -30,3 +30,6 @@
 # Ignore HTML
 
 *.html linguist-detectable=false
+
+# Shared onboarding must remain byte-identical to Statistics.
+InternalFiles/GettingStarted.m -text -whitespace

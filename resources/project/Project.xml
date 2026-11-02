@@ -1,0 +1,709 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project MetadataType="monolithic">
+    <Info Location="ProjectData">
+        <Info Name="Biological Sciences: Image Processing"/>
+    </Info>
+    <Files Location="Root">
+        <File Location=".gitattributes">
+            <Info/>
+        </File>
+        <File Location=".gitignore">
+            <Info/>
+        </File>
+        <File Location="Utilities">
+            <Info/>
+            <DIR_SIGNIFIER Location="1">
+                <Info/>
+            </DIR_SIGNIFIER>
+            <File Location="ProjectStartupApp.m">
+                <Info>
+                    <Category UUID="FileClassCategory">
+                        <Label UUID="design"/>
+                    </Category>
+                </Info>
+            </File>
+            <File Location="ProjectShutdown.m">
+                <Info>
+                    <Category UUID="FileClassCategory">
+                        <Label UUID="design"/>
+                    </Category>
+                </Info>
+            </File>
+            <File Location="ProjectStartupAppStudent.m">
+                <Info>
+                    <Category UUID="FileClassCategory">
+                        <Label UUID="design"/>
+                    </Category>
+                </Info>
+            </File>
+            <File Location="ShareFeedback.m">
+                <Info>
+                    <Category UUID="FileClassCategory">
+                        <Label UUID="design"/>
+                    </Category>
+                </Info>
+            </File>
+        </File>
+        <File Location="README.md">
+            <Info/>
+        </File>
+        <File Location="README.m">
+            <Info>
+                <Category UUID="FileClassCategory">
+                    <Label UUID="design"/>
+                </Category>
+            </Info>
+        </File>
+        <File Location="MainMenu.m">
+            <Info>
+                <Category UUID="FileClassCategory">
+                    <Label UUID="design"/>
+                </Category>
+            </Info>
+        </File>
+        <File Location="StartingTips.m">
+            <Info>
+                <Category UUID="FileClassCategory">
+                    <Label UUID="design"/>
+                </Category>
+            </Info>
+        </File>
+        <File Location="GettingStarted.pdf">
+            <Info>
+                <Category UUID="FileClassCategory">
+                    <Label UUID="artifact"/>
+                </Category>
+            </Info>
+        </File>
+        <File Location="LICENSE.md">
+            <Info/>
+        </File>
+        <File Location="SECURITY.md">
+            <Info/>
+        </File>
+        <File Location="CONTRIBUTING.md">
+            <Info/>
+        </File>
+        <File Location="buildfile.m">
+            <Info>
+                <Category UUID="FileClassCategory">
+                    <Label UUID="design"/>
+                </Category>
+            </Info>
+        </File>
+        <File Location=".gitlab-ci.yml">
+            <Info/>
+        </File>
+        <File Location="Scripts">
+            <Info/>
+            <DIR_SIGNIFIER Location="1">
+                <Info/>
+            </DIR_SIGNIFIER>
+            <File Location="S1PlantImageSegmentation.m">
+                <Info>
+                    <Category UUID="FileClassCategory">
+                        <Label UUID="design"/>
+                    </Category>
+                </Info>
+            </File>
+            <File Location="S2CellCounting.m">
+                <Info>
+                    <Category UUID="FileClassCategory">
+                        <Label UUID="design"/>
+                    </Category>
+                </Info>
+            </File>
+            <File Location="S3ProblemSet.m">
+                <Info>
+                    <Category UUID="FileClassCategory">
+                        <Label UUID="design"/>
+                    </Category>
+                </Info>
+            </File>
+        </File>
+        <File Location="InstructorResources">
+            <Info/>
+            <DIR_SIGNIFIER Location="1">
+                <Info/>
+            </DIR_SIGNIFIER>
+            <File Location="HelperFunctions">
+                <Info/>
+                <DIR_SIGNIFIER Location="1">
+                    <Info/>
+                </DIR_SIGNIFIER>
+                <File Location="CreateStudentApp.m">
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="design"/>
+                        </Category>
+                    </Info>
+                </File>
+                <File Location="CreateStudentVersionHelper.m">
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="design"/>
+                        </Category>
+                    </Info>
+                </File>
+            </File>
+            <File Location="Images">
+                <Info/>
+                <DIR_SIGNIFIER Location="1">
+                    <Info/>
+                </DIR_SIGNIFIER>
+                <File Location="create-open-in-matlab-online-github-link.gif">
+                    <Info/>
+                </File>
+                <File Location="create-open-in-matlab-online-link.gif">
+                    <Info/>
+                </File>
+                <File Location="follow-mathworks-teaching-resources.gif">
+                    <Info/>
+                </File>
+                <File Location="fork-computer-vision-basics.gif">
+                    <Info/>
+                </File>
+                <File Location="open-dc-circuit-analysis.gif">
+                    <Info/>
+                </File>
+                <File Location="share-matlab-online-project.gif">
+                    <Info/>
+                </File>
+                <File Location="cite-engineering-problem-solving.gif">
+                    <Info/>
+                </File>
+                <File Location="file-exchange-follow-button.png">
+                    <Info/>
+                </File>
+                <File Location="file-exchange-message-button.png">
+                    <Info/>
+                </File>
+                <File Location="github-account-verification.png">
+                    <Info/>
+                </File>
+                <File Location="github-follow-button.png">
+                    <Info/>
+                </File>
+                <File Location="github-new-issue-button.png">
+                    <Info/>
+                </File>
+                <File Location="github-new-repository-page.png">
+                    <Info/>
+                </File>
+                <File Location="github-repository-create-button.png">
+                    <Info/>
+                </File>
+                <File Location="github-repository-description.png">
+                    <Info/>
+                </File>
+                <File Location="github-repository-name.png">
+                    <Info/>
+                </File>
+                <File Location="github-repository-owner-menu.png">
+                    <Info/>
+                </File>
+                <File Location="github-repository-share-url.png">
+                    <Info/>
+                </File>
+                <File Location="instructor-resources-app-guide.png">
+                    <Info/>
+                </File>
+                <File Location="live-editor-code-example-menu.png">
+                    <Info/>
+                </File>
+                <File Location="live-editor-hide-code-icon.png">
+                    <Info/>
+                </File>
+                <File Location="live-editor-navigation-icon.png">
+                    <Info/>
+                </File>
+                <File Location="live-editor-output-inline-icon.png">
+                    <Info/>
+                </File>
+                <File Location="live-editor-spell-check-icon.png">
+                    <Info/>
+                </File>
+                <File Location="matlab-add-source-control-button.png">
+                    <Info/>
+                </File>
+                <File Location="matlab-close-project-button.png">
+                    <Info/>
+                </File>
+                <File Location="matlab-copilot-icon.png">
+                    <Info/>
+                </File>
+                <File Location="matlab-copilot-panel.png">
+                    <Info/>
+                </File>
+                <File Location="matlab-git-changes-panel.png">
+                    <Info/>
+                </File>
+                <File Location="matlab-git-clone-button.png">
+                    <Info/>
+                </File>
+                <File Location="matlab-git-clone-dialog.png">
+                    <Info/>
+                </File>
+                <File Location="matlab-git-clone-options.png">
+                    <Info/>
+                </File>
+                <File Location="matlab-git-commit-dialog.png">
+                    <Info/>
+                </File>
+                <File Location="matlab-git-commit-icon.png">
+                    <Info/>
+                </File>
+                <File Location="matlab-git-file-history-menu.png">
+                    <Info/>
+                </File>
+                <File Location="matlab-git-file-history.png">
+                    <Info/>
+                </File>
+                <File Location="matlab-git-project-files.png">
+                    <Info/>
+                </File>
+                <File Location="matlab-git-repository-setup.png">
+                    <Info/>
+                </File>
+                <File Location="matlab-icon.png">
+                    <Info/>
+                </File>
+                <File Location="matlab-online-home-page.png">
+                    <Info/>
+                </File>
+                <File Location="matlab-project-panel-icon.png">
+                    <Info/>
+                </File>
+                <File Location="matlab-project-panel.png">
+                    <Info/>
+                </File>
+                <File Location="matlab-project-source-control-menu.png">
+                    <Info/>
+                </File>
+                <File Location="matlab-project-toolstrip.png">
+                    <Info/>
+                </File>
+                <File Location="matlab-source-control-options.png">
+                    <Info/>
+                </File>
+                <File Location="matlab-source-control-panel-icon.png">
+                    <Info/>
+                </File>
+                <File Location="matlab-source-control-panel.png">
+                    <Info/>
+                </File>
+                <File Location="open-in-matlab-online-badge.png">
+                    <Info/>
+                </File>
+            </File>
+            <File Location="Solutions">
+                <Info/>
+                <DIR_SIGNIFIER Location="1">
+                    <Info/>
+                </DIR_SIGNIFIER>
+                <File Location="S1PlantImageSegmentationSoln.m">
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="design"/>
+                        </Category>
+                    </Info>
+                </File>
+                <File Location="S2CellCountingSoln.m">
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="design"/>
+                        </Category>
+                    </Info>
+                </File>
+                <File Location="S3ProblemSetSoln.m">
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="design"/>
+                        </Category>
+                    </Info>
+                </File>
+            </File>
+            <File Location="Documentation">
+                <Info/>
+                <DIR_SIGNIFIER Location="1">
+                    <Info/>
+                </DIR_SIGNIFIER>
+                <File Location="CreateForkInGitHub.md">
+                    <Info/>
+                </File>
+                <File Location="CustomizeLiveScripts.md">
+                    <Info/>
+                </File>
+                <File Location="README.md">
+                    <Info/>
+                </File>
+                <File Location="UsingGit.md">
+                    <Info/>
+                </File>
+                <File Location="UsingGitHub.md">
+                    <Info/>
+                </File>
+                <File Location="UsingOpenInMATLABOnline.md">
+                    <Info/>
+                </File>
+            </File>
+            <File Location="InstructorResources.m">
+                <Info>
+                    <Category UUID="FileClassCategory">
+                        <Label UUID="design"/>
+                    </Category>
+                </Info>
+            </File>
+        </File>
+        <File Location="InternalFiles">
+            <Info/>
+            <DIR_SIGNIFIER Location="1">
+                <Info/>
+            </DIR_SIGNIFIER>
+        </File>
+        <File Location="SoftwareTests">
+            <Info/>
+            <DIR_SIGNIFIER Location="1">
+                <Info/>
+            </DIR_SIGNIFIER>
+            <File Location="CoursewareSmokeTests.m">
+                <Info>
+                    <Category UUID="FileClassCategory">
+                        <Label UUID="test"/>
+                    </Category>
+                </Info>
+            </File>
+            <File Location="CreateStudentVersionTests.m">
+                <Info>
+                    <Category UUID="FileClassCategory">
+                        <Label UUID="test"/>
+                    </Category>
+                </Info>
+            </File>
+            <File Location="CrossReleaseTestResults.m">
+                <Info>
+                    <Category UUID="FileClassCategory">
+                        <Label UUID="test"/>
+                    </Category>
+                </Info>
+            </File>
+            <File Location="FunctionTests.m">
+                <Info>
+                    <Category UUID="FileClassCategory">
+                        <Label UUID="test"/>
+                    </Category>
+                </Info>
+            </File>
+            <File Location="PostFiles">
+                <Info/>
+                <DIR_SIGNIFIER Location="1">
+                    <Info/>
+                </DIR_SIGNIFIER>
+                <File Location="PostS1PlantImageSegmentation.m">
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="design"/>
+                        </Category>
+                    </Info>
+                </File>
+                <File Location="PostS1PlantImageSegmentationSoln.m">
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="design"/>
+                        </Category>
+                    </Info>
+                </File>
+                <File Location="PostS2CellCounting.m">
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="design"/>
+                        </Category>
+                    </Info>
+                </File>
+                <File Location="PostS2CellCountingSoln.m">
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="design"/>
+                        </Category>
+                    </Info>
+                </File>
+                <File Location="PostS3ProblemSet.m">
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="design"/>
+                        </Category>
+                    </Info>
+                </File>
+                <File Location="PostS3ProblemSetSoln.m">
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="design"/>
+                        </Category>
+                    </Info>
+                </File>
+            </File>
+            <File Location="PreFiles">
+                <Info/>
+                <DIR_SIGNIFIER Location="1">
+                    <Info/>
+                </DIR_SIGNIFIER>
+                <File Location="PreS1PlantImageSegmentation.m">
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="design"/>
+                        </Category>
+                    </Info>
+                </File>
+                <File Location="PreS1PlantImageSegmentationSoln.m">
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="design"/>
+                        </Category>
+                    </Info>
+                </File>
+                <File Location="PreS2CellCounting.m">
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="design"/>
+                        </Category>
+                    </Info>
+                </File>
+                <File Location="PreS2CellCountingSoln.m">
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="design"/>
+                        </Category>
+                    </Info>
+                </File>
+                <File Location="PreS3ProblemSet.m">
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="design"/>
+                        </Category>
+                    </Info>
+                </File>
+                <File Location="PreS3ProblemSetSoln.m">
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="design"/>
+                        </Category>
+                    </Info>
+                </File>
+            </File>
+            <File Location="SetupImageAppExports.m">
+                <Info>
+                    <Category UUID="FileClassCategory">
+                        <Label UUID="test"/>
+                    </Category>
+                </Info>
+            </File>
+        </File>
+        <File Location="Images">
+            <Info/>
+            <DIR_SIGNIFIER Location="1">
+                <Info/>
+            </DIR_SIGNIFIER>
+            <File Location="AddOnsIcon.png">
+                <Info/>
+            </File>
+            <File Location="EndIcon.png">
+                <Info/>
+            </File>
+            <File Location="FluorescentCells.jpg">
+                <Info/>
+            </File>
+            <File Location="MailIcon.png">
+                <Info/>
+            </File>
+            <File Location="OpenInFX.png">
+                <Info/>
+            </File>
+            <File Location="OpenInMO.png">
+                <Info/>
+            </File>
+            <File Location="Pv_troph_thinE.jpg">
+                <Info/>
+            </File>
+            <File Location="Tbrucei_thin_wrgiemsa5.jpg">
+                <Info/>
+            </File>
+            <File Location="TeachingResourcesLogo.png">
+                <Info/>
+            </File>
+            <File Location="app.png">
+                <Info/>
+            </File>
+            <File Location="exercise.png">
+                <Info/>
+            </File>
+            <File Location="flowers.jpg">
+                <Info/>
+            </File>
+            <File Location="outputinline.png">
+                <Info/>
+            </File>
+            <File Location="reflect.png">
+                <Info/>
+            </File>
+            <File Location="try.png">
+                <Info/>
+            </File>
+            <File Location="Cells.png">
+                <Info/>
+            </File>
+            <File Location="DNA_helix.png">
+                <Info/>
+            </File>
+            <File Location="Gentoo.jpeg">
+                <Info/>
+            </File>
+            <File Location="Penguins.jpeg">
+                <Info/>
+            </File>
+            <File Location="Rose.jpeg">
+                <Info/>
+            </File>
+        </File>
+        <File Location="Apps">
+            <Info/>
+            <DIR_SIGNIFIER Location="1">
+                <Info/>
+            </DIR_SIGNIFIER>
+            <File Location=".gitkeep">
+                <Info/>
+            </File>
+        </File>
+        <File Location="Data">
+            <Info/>
+            <DIR_SIGNIFIER Location="1">
+                <Info/>
+            </DIR_SIGNIFIER>
+            <File Location=".gitkeep">
+                <Info/>
+            </File>
+        </File>
+        <File Location="FunctionLibrary">
+            <Info/>
+            <DIR_SIGNIFIER Location="1">
+                <Info/>
+            </DIR_SIGNIFIER>
+            <File Location=".gitkeep">
+                <Info/>
+            </File>
+        </File>
+        <File Location="Models">
+            <Info/>
+            <DIR_SIGNIFIER Location="1">
+                <Info/>
+            </DIR_SIGNIFIER>
+            <File Location=".gitkeep">
+                <Info/>
+            </File>
+        </File>
+        <File Location=".github">
+            <Info/>
+            <DIR_SIGNIFIER Location="1">
+                <Info/>
+            </DIR_SIGNIFIER>
+            <File Location="workflows">
+                <Info/>
+                <DIR_SIGNIFIER Location="1">
+                    <Info/>
+                </DIR_SIGNIFIER>
+                <File Location="ci.yml">
+                    <Info/>
+                </File>
+            </File>
+        </File>
+        <File Location="Getting_Started.pdf">
+            <Info>
+                <Category UUID="FileClassCategory">
+                    <Label UUID="artifact"/>
+                </Category>
+            </Info>
+        </File>
+    </Files>
+    <Categories Location="Root">
+        <Category Location="FileClassCategory">
+            <Info DataType="None" Name="Classification" ReadOnly="1" SingleValued="1"/>
+            <Label Location="design">
+                <Info Name="Design" ReadOnly="READ_ONLY"/>
+            </Label>
+            <Label Location="derived">
+                <Info Name="Derived" ReadOnly="READ_ONLY"/>
+            </Label>
+            <Label Location="artifact">
+                <Info Name="Artifact" ReadOnly="READ_ONLY"/>
+            </Label>
+            <Label Location="convenience">
+                <Info Name="Convenience" ReadOnly="READ_ONLY"/>
+            </Label>
+            <Label Location="other">
+                <Info Name="Other" ReadOnly="READ_ONLY"/>
+            </Label>
+            <Label Location="test">
+                <Info Name="Test" ReadOnly="READ_ONLY"/>
+            </Label>
+            <Label Location="none">
+                <Info Name="None" ReadOnly="READ_ONLY"/>
+            </Label>
+        </Category>
+    </Categories>
+    <Root Location="Extensions">
+        <Extension Location="Information">
+            <Info description="In this module, we will learn how to import, preprocess, and segment biologically relevant images using MATLAB."/>
+        </Extension>
+    </Root>
+    <WorkingFolders Location="Root">
+        <Reference Location="ProjectStartupFolder">
+            <Info Ref="." Type="Relative"/>
+        </Reference>
+    </WorkingFolders>
+    <ProjectPath Location="Root">
+        <Reference Location="db735dba-fa9f-4e3f-9652-e4b6545234cb">
+            <Info Ref="Scripts" Type="Relative"/>
+        </Reference>
+        <Reference Location="76217962-115f-45a9-9c17-e3ac6d674fdf">
+            <Info Ref="Images" Type="Relative"/>
+        </Reference>
+        <Reference Location="dd8f0572-bd83-420e-830e-63a9ddd5632a">
+            <Info Ref="Utilities" Type="Relative"/>
+        </Reference>
+        <Reference Location="73847c22-d374-4700-8a34-60b74c55bc7d">
+            <Info Ref="Apps" Type="Relative"/>
+        </Reference>
+        <Reference Location="5dda6239-b8a3-4859-a2ec-3048627fafbd">
+            <Info Ref="Data" Type="Relative"/>
+        </Reference>
+        <Reference Location="187072e1-6a75-4272-894d-dfc3044916b0">
+            <Info Ref="FunctionLibrary" Type="Relative"/>
+        </Reference>
+        <Reference Location="cd6b6c66-8c72-4491-b816-36b74502363c">
+            <Info Ref="Models" Type="Relative"/>
+        </Reference>
+        <Reference Location="e54d144b-fbe3-4b55-b937-735f828a76a8">
+            <Info Ref="SoftwareTests" Type="Relative"/>
+        </Reference>
+        <Reference Location="20f22193-c396-4ead-bb89-57bb97b6107f">
+            <Info Ref="SoftwareTests/PreFiles" Type="Relative"/>
+        </Reference>
+        <Reference Location="a713b6f3-8d75-47a5-ab02-97bbc7b60f07">
+            <Info Ref="SoftwareTests/PostFiles" Type="Relative"/>
+        </Reference>
+        <Reference Location="830ec4c5-ed72-4c7a-90cd-5a0fc1e5582f">
+            <Info Ref="InternalFiles" Type="Relative"/>
+        </Reference>
+    </ProjectPath>
+    <EntryPoints Location="Root">
+        <EntryPoint Location="ff80dd6f-d626-4b1e-a852-9787ef4565bc">
+            <Info File="Utilities/ProjectStartupApp.m" GroupUUID="default" Icon="" Name="ProjectStartupApp" Type="StartUp" Visible="0">
+                <Extension Name="StartUpPrev" Value="HEAD"/>
+            </Info>
+        </EntryPoint>
+        <EntryPoint Location="0ffd782f-1f57-4f30-bf7c-2796c63a3441">
+            <Info File="Utilities/ProjectShutdown.m" GroupUUID="default" Icon="" Name="ProjectShutdown" Type="Shutdown" Visible="0">
+                <Extension Name="ShutdownPrev" Value="HEAD"/>
+            </Info>
+        </EntryPoint>
+    </EntryPoints>
+</project>
