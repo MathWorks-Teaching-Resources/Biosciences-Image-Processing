@@ -29,13 +29,6 @@
                     </Category>
                 </Info>
             </File>
-            <File Location="ProjectStartupAppStudent.m">
-                <Info>
-                    <Category UUID="FileClassCategory">
-                        <Label UUID="design"/>
-                    </Category>
-                </Info>
-            </File>
             <File Location="ShareFeedback.m">
                 <Info>
                     <Category UUID="FileClassCategory">
@@ -564,33 +557,6 @@
                 <Info/>
             </File>
         </File>
-        <File Location="Apps">
-            <Info/>
-            <DIR_SIGNIFIER Location="1">
-                <Info/>
-            </DIR_SIGNIFIER>
-            <File Location=".gitkeep">
-                <Info/>
-            </File>
-        </File>
-        <File Location="Data">
-            <Info/>
-            <DIR_SIGNIFIER Location="1">
-                <Info/>
-            </DIR_SIGNIFIER>
-            <File Location=".gitkeep">
-                <Info/>
-            </File>
-        </File>
-        <File Location="FunctionLibrary">
-            <Info/>
-            <DIR_SIGNIFIER Location="1">
-                <Info/>
-            </DIR_SIGNIFIER>
-            <File Location=".gitkeep">
-                <Info/>
-            </File>
-        </File>
         <File Location="Models">
             <Info/>
             <DIR_SIGNIFIER Location="1">
@@ -614,13 +580,6 @@
                     <Info/>
                 </File>
             </File>
-        </File>
-        <File Location="Getting_Started.pdf">
-            <Info>
-                <Category UUID="FileClassCategory">
-                    <Label UUID="artifact"/>
-                </Category>
-            </Info>
         </File>
     </Files>
     <Categories Location="Root">
@@ -668,15 +627,6 @@
         </Reference>
         <Reference Location="dd8f0572-bd83-420e-830e-63a9ddd5632a">
             <Info Ref="Utilities" Type="Relative"/>
-        </Reference>
-        <Reference Location="73847c22-d374-4700-8a34-60b74c55bc7d">
-            <Info Ref="Apps" Type="Relative"/>
-        </Reference>
-        <Reference Location="5dda6239-b8a3-4859-a2ec-3048627fafbd">
-            <Info Ref="Data" Type="Relative"/>
-        </Reference>
-        <Reference Location="187072e1-6a75-4272-894d-dfc3044916b0">
-            <Info Ref="FunctionLibrary" Type="Relative"/>
         </Reference>
         <Reference Location="cd6b6c66-8c72-4491-b816-36b74502363c">
             <Info Ref="Models" Type="Relative"/>

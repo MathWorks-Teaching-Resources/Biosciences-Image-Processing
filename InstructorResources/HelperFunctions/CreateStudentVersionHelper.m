@@ -195,7 +195,6 @@ removeFiles = [
     ".gitlab-ci.yml"
     "CONTRIBUTING.md"
     fullfile("Utilities","ProjectSettings.mat")
-    fullfile("Utilities","ProjectStartupAppStudent.m")
     "InstructorToolkit-plan.md"
     fullfile("Utilities","ProjectStartupApp-plan.md")
     ];

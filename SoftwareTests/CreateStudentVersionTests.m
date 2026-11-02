@@ -33,18 +33,6 @@ classdef CreateStudentVersionTests < matlab.unittest.TestCase
                 matlab.lang.OnOffSwitchState.on);
         end
 
-        function studentStartupShowsModule(testCase)
-            app = ProjectStartupAppStudent;
-            testCase.addTeardown(@() delete(app));
-            drawnow
-            testCase.verifyTrue(contains(app.HTML5.HTMLSource, ...
-                'Biological Sciences: Image Processing'));
-            testCase.verifyEqual(string(app.Image2.ImageSource), ...
-                string(fullfile(testCase.ProjectRoot, 'Images', ...
-                'FluorescentCells.jpg')));
-            testCase.verifyEmpty(app.InstructorButton);
-        end
-
         function startupMenuOpens(testCase)
             app = ProjectStartupApp;
             testCase.addTeardown(@() delete(app));
@@ -75,19 +63,27 @@ classdef CreateStudentVersionTests < matlab.unittest.TestCase
             testCase.verifyFalse(isfolder(fullfile(destination, '.github')));
             testCase.verifyFalse(isfolder(fullfile(destination, '.cache')));
             testCase.verifyFalse(isfile(fullfile(destination, 'buildfile.m')));
-            testCase.verifyFalse(isfile(fullfile(destination, 'Utilities', ...
-                'ProjectStartupAppStudent.m')));
             testCase.verifyFalse(contains(fileread(fullfile(destination, ...
                 'MainMenu.m')), 'InstructorResources/'));
             testCase.verifyTrue(contains(fileread(fullfile(destination, ...
                 'Utilities', 'ProjectStartupApp.m')), ...
                 'HideInstructorResources = true;'));
+            testCase.verifyTrue(contains(fileread(fullfile(testCase.ProjectRoot, ...
+                'Utilities', 'ProjectStartupApp.m')), ...
+                'HideInstructorResources = false;'));
             testCase.addTeardown(@() restoreSourceProject(testCase.ProjectRoot));
             studentProject = openProject(fullfile(destination, ...
                 'BiosciencesImageProcessing.prj'));
             testCase.verifyEqual(string(studentProject.RootFolder), destination);
             testCase.verifyFalse(any(contains(studentProject.PathFolders, ...
                 'SoftwareTests')));
+            drawnow
+            studentStartup = findall(groot, 'Name', 'StartUp App');
+            testCase.assertNumElements(studentStartup, 1);
+            testCase.verifyEmpty(findall(studentStartup, ...
+                'Text', 'Instructor resources'));
+            testCase.verifyNotEmpty(findall(studentStartup, ...
+                'Text', 'Open Main Menu'));
             testCase.verifyTrue(isfolder(fullfile(testCase.ProjectRoot, ...
                 'InstructorResources')));
         end
