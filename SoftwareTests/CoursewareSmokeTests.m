@@ -120,6 +120,14 @@ classdef CoursewareSmokeTests < matlab.unittest.TestCase
             knownIssueIds = "";
             KnownIssueSource = "";
 
+            % Batch CI checks image processing without opening interactive apps.
+            % These stubs exist only in the workspace used by run(fileToRun).
+            if ~desktop('-inuse') || strcmpi(getenv('CI'), 'true')
+                imageViewer = @skipInteractiveImageApp; %#ok<NASGU>
+                imageRegionAnalyzer = @skipInteractiveImageApp; %#ok<NASGU>
+                imtool = @skipInteractiveImageApp; %#ok<NASGU>
+            end
+
             preHookPath = testCase.ensurePreRunHookFile(fileToRun);
             run(preHookPath);
 
@@ -218,6 +226,9 @@ classdef CoursewareSmokeTests < matlab.unittest.TestCase
 
     end
 
+end
+
+function skipInteractiveImageApp(varargin) %#ok<INUSD>
 end
 
 function closeNewFigures(originalFigures)
