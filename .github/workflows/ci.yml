@@ -100,7 +100,7 @@ jobs:
         with:
           release: ${{ matrix.Releases }}
           products: ${{ env.MATLAB_PRODUCTS }}
-          cache: true
+          cache: false
 
       # Run aggregated test task from buildfile.m.
       - name: Run buildtool test
@@ -138,7 +138,7 @@ jobs:
         uses: matlab-actions/setup-matlab@v3
         with:
           release: latest
-          cache: true
+          cache: false
 
       # Download the test results from artifact
       - name: Download All TestResults
