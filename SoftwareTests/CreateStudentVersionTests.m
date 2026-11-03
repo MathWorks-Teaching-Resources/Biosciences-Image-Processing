@@ -34,6 +34,8 @@ classdef CreateStudentVersionTests < matlab.unittest.TestCase
         end
 
         function startupMenuOpens(testCase)
+            testCase.assumeTrue(desktop('-inuse'), ...
+                'Opening the Main Menu requires the MATLAB desktop.');
             app = ProjectStartupApp;
             testCase.addTeardown(@() delete(app));
             document = matlab.desktop.editor.openDocument( ...
@@ -75,7 +77,8 @@ classdef CreateStudentVersionTests < matlab.unittest.TestCase
             studentProject = openProject(fullfile(destination, ...
                 'BiosciencesImageProcessing.prj'));
             testCase.verifyEqual(string(studentProject.RootFolder), destination);
-            testCase.verifyFalse(any(contains(studentProject.PathFolders, ...
+            studentPathFolders = string({studentProject.ProjectPath.File});
+            testCase.verifyFalse(any(contains(studentPathFolders, ...
                 'SoftwareTests')));
             drawnow
             studentStartup = findall(groot, 'Name', 'StartUp App');
