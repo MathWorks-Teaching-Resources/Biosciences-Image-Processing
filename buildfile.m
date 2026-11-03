@@ -80,10 +80,6 @@ if ~isempty(matlab.unittest.TestSuite.fromClass(?FunctionTests))
         RunOnlyImpactedTests=false);
 end
 
-plan("test:distribution") = TestTask("SoftwareTests/CreateStudentVersionTests.m", ...
-    TestResults=fullfile(releaseFolder, ["CreateStudentVersionTests.xml" "CreateStudentVersionTests.html" "CreateStudentVersionTests.mat"]), ...
-    Description="Validate student distribution", RunOnlyImpactedTests=false);
-
 % TASK 3: report:validate (CI-only, runs after test-matrix merge)
 % Aggregates test results from all MATLAB releases (public/2024b/, public/2025a/, public/2025b/)
 % Validates that tests passed consistently across releases

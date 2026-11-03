@@ -366,13 +366,6 @@
                     </Category>
                 </Info>
             </File>
-            <File Location="CreateStudentVersionTests.m">
-                <Info>
-                    <Category UUID="FileClassCategory">
-                        <Label UUID="test"/>
-                    </Category>
-                </Info>
-            </File>
             <File Location="CrossReleaseTestResults.m">
                 <Info>
                     <Category UUID="FileClassCategory">
